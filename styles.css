@@ -76,9 +76,12 @@ h1:hover {
 
 .icon {
   display: flex;
-  width: 10px;
+  width: 15px;
 }
 
+.icon:hover {
+  transform: scale(2);
+}
 .sub-feature-text {
   color: var(--color-grey-600);
   padding: 2px;
