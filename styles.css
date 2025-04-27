@@ -21,8 +21,15 @@ html {
   width: 350px;
   margin: 50px auto;
   box-shadow: 3px 3px 10px rgb(201, 200, 200);
+  transition: transform 0, 5s ease-out 1s;
+  /* transition: transform 2s ease-in 1s; */
+  transition: background-color 0.5 ease-out;
 }
-
+.card-container:hover {
+  /* transform: rotate(180deg); */
+  transform: scale(1.05);
+  background-color: beige;
+}
 h1 {
   color: var(--color-grey-600);
   text-align: left;
@@ -30,6 +37,9 @@ h1 {
   margin: 10px 0;
   font-family: "Zilla Slab", serif;
   font-weight: 600;
+}
+h1:hover {
+  transform: scale(1.05);
 }
 
 .card-info {
@@ -91,6 +101,7 @@ h1 {
   border: 2px solid rgb(224, 224, 224);
   font-size: var(--size-1);
   font-weight: 600;
+  transition: background-color 0.5s ease-out;
 }
 
 .button:hover {
